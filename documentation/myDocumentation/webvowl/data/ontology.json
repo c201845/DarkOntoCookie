@@ -1,0 +1,2722 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/GConsent", "https://schema.org", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/OntoCookie", "http://www.w3.org/2006/time" ],
+    "iri" : "http://www.semanticweb.org/OntoCookie",
+    "version" : "Version 2.0",
+    "description" : {
+      "undefined" : "This is an extension of the OntoCookie ontology with concepts for Dark Patterns.\n\nThe OntoCookie ontology for semantically representing web cookies and cookie-based data sharing online."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Anelia Kurteva",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Gabriela Kurteva",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "Version 2.0",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "undefined",
+        "value" : "The OntoCookie ontology is a formal representation of the cookie domain. The ontology was built as a response to the lack of openly available semantic models for cookies. By following a top-down ontology engineering approach, the main classes describing cookies, their purpose, necessity, data subject giving consent for cookies, sub-classes and the relationships between them were defined.\n\nIn version 2.0, the OntoCookie ontology has been extended to represent various types of dark patterns encountered on cookie banners online. The extension of the ontology is part of the MSc thesis of Gabriela Kurteva, School of Computer Science and Informatics at Cardiff University, The UK.\n\nIn addition, the ontology extension utilising GConsent ontology public source  in collaboration with the original authors of the OntoCookie Ontology, namely Dr. A. Kurteva.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "156",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "183",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Hidden_Information",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to certain elements or information being deliberately hidden, e.g., in a sub-menu, in small print or through visual design.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Hidden_Information",
+      "undefined" : "Hidden Information"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Obstruction",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to making a process more difficult than it needs to be, with the intent of dissuading certain action(s)\n\nIt is a type of High Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Obstruction",
+      "undefined" : "Obstruction"
+    },
+    "subClasses" : [ "4" ],
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Marketing",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Tracking track users' online activity to help advertisers deliver more relevant advertising or to limit how many times users see an ad."
+    },
+    "label" : {
+      "IRI-based" : "Marketing",
+      "undefined" : "Marketing"
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Loss-gain_Framing",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Loss-gain_Framing",
+      "undefined" : "Loss-gain/Negative Framing"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Untranslation",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Untranslation",
+      "undefined" : "Untranslation"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#ZombieCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "A zoombie cookie is a tracking mechanism of data and code hidden ouside users web browsers cookie storage location. The cookies repeatedly build Flash cookies as regular in the event of orginal cookie deletion."
+    },
+    "label" : {
+      "IRI-based" : "ZombieCookie",
+      "undefined" : "Zombie Cookie"
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#Processing",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "As per Article 6 of the GDPR, \" the data subject has given consent to the processing of his or her personal data for one or more specific purposes and necessary in order to protect the vital interests of the data subject or of another natural person.\"\n\nThe 'Processing' entity is linked to the 'Consent' instance via the isUpdatedConsentFor property."
+    },
+    "label" : {
+      "IRI-based" : "Processing",
+      "undefined" : "Processing"
+    },
+    "subClasses" : [ "17", "18", "19", "20" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Bundle_Consent",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers combination of multiple agreements into a single action, and difficult/impossible for a user to selectively grant consent.\n\nIt is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Bundle_Consent",
+      "undefined" : "Bundle Consent"
+    },
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Privacy_Maze",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "When users wish to obtain certain information or use a specific control or exercise a data subject right, it is particularly difficult for them to find it as they have to navigate through too many pages in order to obtain the relevant information or control, without having a comprehensive and exhaustive overview available. Users are likely to give up or miss the relevant information or control."
+    },
+    "label" : {
+      "IRI-based" : "Privacy_Maze",
+      "undefined" : "Privacy Maze"
+    },
+    "comment" : {
+      "undefined" : "EDPB, Guidelines 3/2022 on Dark patterns in social media platform interfaces: How to recognise and avoid them - Adopted on 14 March 2022 - Version 1.0 - version for public consultation"
+    },
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#AuthenticationCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Authentication cookies assist in the process of user crediantial exchange for a pice of unique identification, for example during log-in account authentication."
+    },
+    "label" : {
+      "IRI-based" : "AuthenticationCookie",
+      "undefined" : "Authentication Cookie"
+    },
+    "id" : "27",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#TrackingActivity",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "The 'Tracking Activity' correlates to the state of cookie usage and data collection relative to the state of 'given' or 'not' given user permission. It is linked to the Status instance via the hasAssociation and hasStatuses properties."
+    },
+    "label" : {
+      "IRI-based" : "TrackingActivity",
+      "undefined" : "Tracking Activity"
+    },
+    "subClasses" : [ "29", "30" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#ServicePersonalisation",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Personalised service is a type of customer service tailored to the customer's individual needs."
+    },
+    "label" : {
+      "IRI-based" : "ServicePersonalisation",
+      "undefined" : "Service Personalisation"
+    },
+    "id" : "39",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#ConsentStatusExplicitlyGiven",
+    "baseIri" : "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Indicates consent is explicitly given."
+    },
+    "label" : {
+      "IRI-based" : "ConsentStatusExplicitlyGiven",
+      "undefined" : "Explicitly Given"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#User_Confirmshaming",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to the act of shaming users to persuade to take an action they don't want to\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "User_Confirmshaming",
+      "undefined" : "User Confirmshaming"
+    },
+    "subClasses" : [ "45" ],
+    "id" : "43",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Medium",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Represents the channel/path through which the user can give/revoke consent."
+    },
+    "label" : {
+      "IRI-based" : "Medium",
+      "undefined" : "Medium"
+    },
+    "subClasses" : [ "37" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Baith_Switch",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to a user doing one thing, but a different, undesirable thing happens instead.\n\nExample:“giving acceptance value to a button with a cross, which in users’ minds is synonymous with ‘close and move on.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Baith_Switch",
+      "undefined" : "Baith Switch"
+    },
+    "subClasses" : [ "49" ],
+    "id" : "47",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#ServiceProvision",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "The provision of service is the act of giving it or making it available to users."
+    },
+    "label" : {
+      "IRI-based" : "ServiceProvision",
+      "undefined" : "Service Provision"
+    },
+    "id" : "51",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Location",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "undefined" : "Location"
+    },
+    "subClasses" : [ "53", "54" ],
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Force_Subscription",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to th involvement in the cookie banner to entice users into subscribing to a service or newsletter under false pretenses.\n\nIt is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Force_Subscription",
+      "undefined" : "Force Subscription"
+    },
+    "id" : "58",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Shaming_Confirmation_Dialogue",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "falls into Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Shaming_Confirmation_Dialogue",
+      "undefined" : "Shaming Confirmation Dialogue"
+    },
+    "id" : "45",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Bad_Defaults",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to the practices where websites interests and advertisement is the focus rather than user privacy,  introduced through the settings for cookie consent(i.e. giving more consent than required if the options were more transparent).\n\nIt is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Bad_Defaults",
+      "undefined" : "Bad Defaults"
+    },
+    "id" : "69",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#AlignmentOfPersonalData",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "As per Article 15 of the GDPR, 'at the time when personal data are obtained\", the user is provided with the purposes of the processing for which the personal data are intended as well as the legal basis for the processing; the legitimate interests pursued by the controller or by a third party.\n\nIn addition to the information referred to in paragraph 1, the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject or to object to processing as well as the right to data portability; where the processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;\n\nIn the case of this ontology, 'AlignmentOfPersonalData' is a concept as well as a tangible entity. To separate this distinction with relation to the data processing, the AlignmentOfPersonalData class represents the control individual perform in its complete state.\n\nTo link the AlignmentOfPersonalData with the Processing instance, use the  hascontrolover property."
+    },
+    "label" : {
+      "IRI-based" : "AlignmentOfPersonalData",
+      "undefined" : "Alignment of Personal Data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Non_Functional_Cookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Non Functional Cookie"
+    },
+    "label" : {
+      "IRI-based" : "Non_Functional_Cookie"
+    },
+    "id" : "71",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#trackact:Before_Consent",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "trackact:Before_Consent",
+      "undefined" : "Prior Consent"
+    },
+    "id" : "29",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Emotion/Sensory_Manupulation",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to two emotion framing such that:\n- Loss-gain Framing: information disclosure positively framing the consequences of an action, while omitting the entailed risks \n- Negative Framing: reverse case\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Emotion/Sensory_Manupulation",
+      "undefined" : "Emotion/Sensory Manupulation"
+    },
+    "subClasses" : [ "7" ],
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#ServiceOptimisation",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Aims to improve a service process that involves close interaction between customer and a web service."
+    },
+    "label" : {
+      "IRI-based" : "ServiceOptimisation",
+      "undefined" : "Service Optimisation"
+    },
+    "id" : "72",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#CollectionOfPersonalData",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CollectionOfPersonalData",
+      "undefined" : "Collection of Personal Data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#CookieDialog",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CookieDialog",
+      "undefined" : "Cookie Dialog"
+    },
+    "comment" : {
+      "undefined" : "A medium for asking consent through cookies."
+    },
+    "id" : "37",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Cognitive_Bias_-_Misdirection",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "could refer to the unequal interaction paths for the most and least privacy-protective options\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Cognitive_Bias_-_Misdirection",
+      "undefined" : "Cognitive Bias Misdirection"
+    },
+    "subClasses" : [ "74" ],
+    "id" : "73",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#SessionCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "A session cookie (also known as  \"strictly necessary\" under GDPR or an in-memory cookie) exists only in temporary memory during website navigation."
+    },
+    "label" : {
+      "IRI-based" : "SessionCookie",
+      "undefined" : "Session Cookie"
+    },
+    "id" : "75",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Nagging",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers redirection of expected functionality that persists beyond one or more interactions.\n\nIt is a type of High Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Nagging",
+      "undefined" : "Nagging"
+    },
+    "id" : "79",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Additional_Stops",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Additional_Stops",
+      "undefined" : "Additional Steps"
+    },
+    "subClasses" : [ "26" ],
+    "id" : "80",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#SuperCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "A supercookie is a cookie with an origin of a top-level domain (such as .com) or a public suffix (such as .co.uk). Ordinary cookies, by contrast, have an origin of a specific domain name, such as example.com."
+    },
+    "label" : {
+      "IRI-based" : "SuperCookie",
+      "undefined" : "Super Cookie"
+    },
+    "id" : "81",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Fake_Scarcity",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to creating a false sense of urgency or limited availability to pressure users into making a decision.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Fake_Scarcity",
+      "undefined" : "Fake Scarcity"
+    },
+    "subClasses" : [ "58", "82" ],
+    "id" : "59",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#ConsentStatusExpired",
+    "baseIri" : "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Indicates the consent has expired."
+    },
+    "label" : {
+      "IRI-based" : "ConsentStatusExpired",
+      "undefined" : "Expired"
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#IP_Address",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IP_Address",
+      "undefined" : "IP Address"
+    },
+    "id" : "53",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#SameSiteCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "A Same Site cookie has SameSite=Strict attribute which would indicate that a cookie only sent along with cross-site requests (in a first-party context such that a browser would send cookies to a target domain parallel to the origin domain.)"
+    },
+    "label" : {
+      "IRI-based" : "SameSiteCookie",
+      "undefined" : "Same Site Cookie"
+    },
+    "id" : "85",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#FirstPartyCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "A first-party cookie is a cookie set by the domain that a user currently visits in the web browser's address bar.  The cookies have vital role as they contain vital personal identifiers."
+    },
+    "label" : {
+      "IRI-based" : "FirstPartyCookie",
+      "undefined" : "First Party Cookie"
+    },
+    "id" : "89",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#S",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to situation where a user is required to respond to a question, which if read carefully, asks another thing entirely.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "S",
+      "undefined" : "Trick Questions"
+    },
+    "subClasses" : [ "93" ],
+    "id" : "92",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#ConsentStatusNotGiven",
+    "baseIri" : "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Indicates that consent has not been given."
+    },
+    "label" : {
+      "IRI-based" : "ConsentStatusNotGiven",
+      "undefined" : "Not Given"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Disabled_Decision_Postpone",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Disabled_Decision_Postpone",
+      "undefined" : "Disabled Decision Postpone"
+    },
+    "id" : "98",
+    "superClasses" : [ "99" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#ConsentStatusWithdrawn",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Indicates the consent has undergone revocability,"
+    },
+    "label" : {
+      "IRI-based" : "ConsentStatusWithdrawn",
+      "undefined" : "Withdrawn"
+    },
+    "attributes" : [ "external" ],
+    "id" : "100",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Dead_End",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Dead_End",
+      "undefined" : "Dead End"
+    },
+    "id" : "101",
+    "superClasses" : [ "102" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity",
+      "undefined" : "Temporal Entity"
+    },
+    "subClasses" : [ "35" ],
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#StorageOfPersonalData",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StorageOfPersonalData",
+      "undefined" : "Storage of Personal Data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Tracking",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Tracking cookies are commonly used for legitimate marketing and advertising purposes including track the user's behavior."
+    },
+    "label" : {
+      "IRI-based" : "Tracking",
+      "undefined" : "Tracking"
+    },
+    "id" : "105",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Forced_Action",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to manipulating users into making unwated actions.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Forced_Action",
+      "undefined" : "Forced Action"
+    },
+    "subClasses" : [ "23", "107" ],
+    "id" : "24",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#UseOfPersonalData",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UseOfPersonalData",
+      "undefined" : "Use of Personal Data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#trackact:After_Consent",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "trackact:After_Consent",
+      "undefined" : "Post Consent"
+    },
+    "id" : "30",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#User_Coercion",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to requiring the user to perform a certain action to access (or continue to access) certain functionality\n\nIt is a type of High Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "User_Coercion",
+      "undefined" : "User Coercion"
+    },
+    "subClasses" : [ "120", "24" ],
+    "id" : "106",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Deceptive_Space",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Deceptive_Space",
+      "undefined" : "Deceptive Space"
+    },
+    "id" : "49",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Confrontation_Barriers",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Confrontation_Barriers",
+      "undefined" : "Confrontation Barriers"
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Roach_Motel",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "could refer to situation of 'Rejecting' cookies. In this case it cannot be done through the consent notice itself, but only via a more complicated way.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Roach_Motel",
+      "undefined" : "Roach Motel"
+    },
+    "subClasses" : [ "101" ],
+    "id" : "102",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#ThirdPartyCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "A third-party cookie is set by a domain other than the original visited shown in the address bar."
+    },
+    "label" : {
+      "IRI-based" : "ThirdPartyCookie",
+      "undefined" : "Third Party Cookie"
+    },
+    "id" : "114",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Complex_Language",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Complex_Language",
+      "undefined" : "Complex Language"
+    },
+    "id" : "139",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#TrackingCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Tracking cookies are utilised by web servers to record individuals' browsing behaviour"
+    },
+    "label" : {
+      "IRI-based" : "TrackingCookie",
+      "undefined" : "Tracking Cookie"
+    },
+    "subClasses" : [ "114", "89" ],
+    "id" : "90",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Social_Engineering",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to an exploit of psychological manipulation on users toward accepting cookies or other tracking mechanisms\n\nIt is a type of High Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Social_Engineering",
+      "undefined" : "Social Engineering"
+    },
+    "subClasses" : [ "43" ],
+    "id" : "44",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Labyrinthine_Navigation",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to nested interfaces which make users loss sight and get lost and simultaneously disable users from performing preferred choices.\n\nIt is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Labyrinthine_Navigation",
+      "undefined" : "Labyrinthine Navigation"
+    },
+    "subClasses" : [ "25" ],
+    "id" : "26",
+    "superClasses" : [ "80" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#HttpOnlyCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "An HTTP-only cookie, marked with the HttpOnly flag, preserves the cookie from client-side APIs access and limits the positibility of cross-site-scription(cookie theft).Nevertheless, the cookies remain susceptible to cross-site tracing (XST) unless tokens are combined with other security practices."
+    },
+    "label" : {
+      "IRI-based" : "HttpOnlyCookie",
+      "undefined" : "Http Only Cookie"
+    },
+    "id" : "135",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Analytics",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Analytics cookies or performance cookies are used to track website visitors and their user behaviour. This data is then used to improve the way the website works and in turn, used to improve user experience."
+    },
+    "label" : {
+      "IRI-based" : "Analytics",
+      "undefined" : "Analytics"
+    },
+    "id" : "156",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Interface_Inference",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to manipulation of the user interface that privileges specific actions over others\n\nIt is a type of High Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Interface_Inference",
+      "undefined" : "Interface Inference"
+    },
+    "subClasses" : [ "70", "0", "73", "149", "8" ],
+    "id" : "1",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#Status",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "The hasStatus property represents the relationship between a 'Consent' and its associated Status. It indicates the current state or condition of a 'Consent', such as those defined in the 'Status' class (e.g., 'given', 'not given', 'withdrawn'). The 'Status' class allows for the persistence of the validity or suitability of the consent provided by the data subject."
+    },
+    "label" : {
+      "IRI-based" : "Status",
+      "undefined" : "Status"
+    },
+    "subClasses" : [ "97", "100", "40", "83" ],
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Manipulating_Visual_Choice_Architecture",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to Visual or interactive prominence of one option over others, whereas available choices should be evenly leveled rather than hierarchical, primiraly known as False Hiearchy.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Manipulating_Visual_Choice_Architecture",
+      "undefined" : "Manipulating Visual Choice Architecture"
+    },
+    "subClasses" : [ "148" ],
+    "id" : "149",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Unequal_Paths",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Unequal_Paths",
+      "undefined" : "Unequal Paths"
+    },
+    "id" : "74",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#False_Hiearchy",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to the act of making some options appear more prominent than others\n\nIt is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "False_Hiearchy",
+      "undefined" : "False Hiearchy"
+    },
+    "id" : "148",
+    "superClasses" : [ "149" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Pay_to_Skip",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to presenting an option to pay to bypass certain features or choices or offering a site premium version where users can skip the cookie consent process.\n\nIt is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Pay_to_Skip",
+      "undefined" : "Pay to Skip"
+    },
+    "id" : "82",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Cookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "HTTP cookies (also called web cookies, Internet cookies, browser cookies, or simply cookies) are small blocks of data created by a web server while a user is browsing a website and placed on the user's computer or other device by the user’s web browser. Cookies are placed on the device used to access a website, and more than one cookie may be placed on a user’s device during a session."
+    },
+    "label" : {
+      "IRI-based" : "Cookie",
+      "undefined" : "Cookie"
+    },
+    "subClasses" : [ "71", "27", "14", "142", "90", "81", "75", "137", "135", "85", "179" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Purpose",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "The 'Purpose' reflect the functionality and the level of neccessity a web cookies."
+    },
+    "label" : {
+      "IRI-based" : "Purpose",
+      "undefined" : "Purpose"
+    },
+    "subClasses" : [ "39", "51", "183", "105", "5", "72", "156" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Privacy_Zickering",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to 'the act of creating deliberately confusing jargon and user-interfaces which trick your users into sharing more info about themselves than they really want to.'\n\nIt is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Privacy_Zickering",
+      "undefined" : "Privacy Zickering"
+    },
+    "id" : "107",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#SecureCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "A secure cookie is designed to be trasmitted only over secured,encrypted connection (i.e. HTTPS) and when marked with the Secure flag adds an additional layer of protection against XSS attacks."
+    },
+    "label" : {
+      "IRI-based" : "SecureCookie",
+      "undefined" : "Secure Cookie"
+    },
+    "id" : "137",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Profiling",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Cookie profiling, also called web profiling, is the use of persistent or permanent cookies to track a user's overall activity online."
+    },
+    "label" : {
+      "IRI-based" : "Profiling",
+      "undefined" : "Profiling"
+    },
+    "id" : "183",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "185",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#CountryOfOrigin",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CountryOfOrigin",
+      "undefined" : "Country of Origin"
+    },
+    "id" : "54",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Choice_Fatigue",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to situations when the options are predefined (e.g., selected checkboxes) in a way that encourages over-sharing personal information, thus encoraging users to share information they have not intended to at the start of an interaction. It may also indicate for a task flow that is deliberately complicated by making certain actions more strenuous to execute.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Choice_Fatigue",
+      "undefined" : "Choice Fatigue"
+    },
+    "subClasses" : [ "69" ],
+    "id" : "70",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Environmental_Context",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "As per Article 12 of the GDPR, \"the controller shall take appropriate measures to provide any information referred to in Articles 13 and 14, and any communication under Articles 15 to 22 and 34, relating to processing to the data subject in a concise, transparent, intelligible, and easily accessible form, using clear and plain language.\"\n\nIn this case, 'Environmental Contenxt' refers to the collective representation of location and a timestamp for instant of creation along with capturing the expiry of consent as either a instant of time or a duration attributes assisting of building compliant cookie notices that  legally provide users with clear information and freedom to exercise control over their data.\n\nThe 'Environmental Contenxt' is linked to the 'Consent' via the isUpdatedConsentFor, Instant via the atTime, Temporal Entity via hasExpiry properties."
+    },
+    "label" : {
+      "IRI-based" : "Environmental_Context",
+      "undefined" : "Environmental Context"
+    },
+    "subClasses" : [ "52", "103" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/GConsent#DataSubject",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "As per Article 4(1) of the GDPR pertaining to the definition of Personal Data, 'Data Subject' is defined as an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.\n\nThe 'Data Subject' is linked to the 'Consent' via the isConsentForDataSubject and hasConsent properties."
+    },
+    "label" : {
+      "IRI-based" : "DataSubject",
+      "undefined" : "Data Subject"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Domain",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "The 'Domain' attribute signifies the site for which cookies are valied with every request for this domain or its subdomains."
+    },
+    "label" : {
+      "IRI-based" : "Domain",
+      "undefined" : "Domain"
+    },
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Sneaking",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to attemps of hiding, disguise, or delay the divulging of information that is relevant to the user\n\nIt is a type of High Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Sneaking",
+      "undefined" : "Sneaking"
+    },
+    "subClasses" : [ "47" ],
+    "id" : "48",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#HostOnlyCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "A Host Only cookie is handled by the web browser only to the host domain that set it."
+    },
+    "label" : {
+      "IRI-based" : "HostOnlyCookie",
+      "undefined" : "Host Only Cookie"
+    },
+    "id" : "179",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#DarkPattern",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "As per Article 25 of the GDPR, taking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for rights and freedoms of natural persons posed by the processing, the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles, such as data minimisation, in an effective manner and to integrate the necessary safeguards into the processing in order to meet the requirements of this Regulation and protect the rights of data subjects.\n\nIn this case, 'Dark Patterns' is a safisticated design concepts used in online platforms to trick users into doing something they have not intended to such as giving up their privacy - substantial, moderate or minimal impacts on users’ decisions. \n\nTo link the 'Dark Patterns' with the Alignment Of Personal Data instance, use the isConsentForConsent and dependson properties."
+    },
+    "label" : {
+      "IRI-based" : "DarkPattern",
+      "undefined" : "Dark Pattern"
+    },
+    "subClasses" : [ "106", "1", "102", "79", "80", "59", "10", "99", "92", "44", "2", "48" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Trick_Questions",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to situation where a user is required to respond to a question, which if read carefully, asks another thing entirely.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Trick_Questions",
+      "undefined" : "Brignull's Questions"
+    },
+    "id" : "93",
+    "superClasses" : [ "92" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#PersistentCookie",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Persistent cookies are designed to be retained across multiple sessions and are transmitted with every request made to the domain that set them. In this case, before  the cookie timestap span expires the cookies and its information are transfered set by the server creator and its informartion is trasffered  to the server multiple times an individual visits a domain where the user views a resource thea t belongs the original website or specifically the website that the cookie resources from."
+    },
+    "label" : {
+      "IRI-based" : "PersistentCookie",
+      "undefined" : "Persistent Cookie"
+    },
+    "id" : "142",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Hidden_Language_Stipulations",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to legally required documents, such as privacy policies and terms and conditions written in legal jargon, difficult to understand and length structure manipulates the average user from reading through it.\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Hidden_Language_Stipulations",
+      "undefined" : "Hidden Language Stipulations"
+    },
+    "subClasses" : [ "139", "9", "204" ],
+    "id" : "10",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Passive_Voice_Elements",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "It is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Passive_Voice_Elements",
+      "undefined" : "Passive Voice Elements"
+    },
+    "id" : "204",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Cookie_Wall",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to the act of service blockage by a cookie wall, while it is not needed for service to function (also known as take-it-or-leave-it).\n\nIt is a type of Low Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Cookie_Wall",
+      "undefined" : "Cookie Wall"
+    },
+    "id" : "120",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#Instant",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instant",
+      "undefined" : "Instant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#Last_Minute_Consent",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "refers to situation where consent for the data collection is seeked at a specific moment when users are in a hurry or close to finishing a given task\n\nIt is a type of Meso Level Dark Pattern"
+    },
+    "label" : {
+      "IRI-based" : "Last_Minute_Consent",
+      "undefined" : "Last Minute Consent"
+    },
+    "subClasses" : [ "98" ],
+    "id" : "99",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#Consent",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "As per Article 4(11) of the GDPR, ‘Consent’ of the data subject means any freely given, specific, informed and unambiguous indication of the data subject’s wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her;\n\nIn the ontology, 'Consent' is a concept as well as a tangible entity. To link the 'Consent' instance with the 'Data Subject' instance, use the isConsentForDataSubject and hasConsent, whilst link to Alignment of Personal Data via dependsOn properties."
+    },
+    "label" : {
+      "IRI-based" : "Consent",
+      "undefined" : "Consent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  } ],
+  "property" : [ {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/OntoCookie#name",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "13",
+    "description" : {
+      "undefined" : "The name of the data subject that accepted a cookies."
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://schema.org/endDate",
+    "baseIri" : "https://schema.org",
+    "range" : "22",
+    "description" : {
+      "undefined" : "timestamp for capturing the expiry of consent"
+    },
+    "label" : {
+      "IRI-based" : "endDate",
+      "undefined" : "end Date"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/GConsent#isConsentForDataSubject",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "12",
+    "description" : {
+      "undefined" : "Links a consent instance with the data subject it is associated with."
+    },
+    "label" : {
+      "IRI-based" : "isConsentForDataSubject",
+      "undefined" : "isConsentForDataSubject"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/GConsent#atTime",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "atTime",
+      "undefined" : "atTime"
+    },
+    "domain" : "34",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#includesDarkPattern",
+    "inverse" : "38",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "includesDarkPattern"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#generated",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "generated",
+      "undefined" : "generated"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "functional" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#isDarkPatternIn",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isDarkPatternIn"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "functional" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/GConsent#isContextForConsent",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isContextForConsent",
+      "undefined" : "isContextForConsent"
+    },
+    "domain" : "20",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#isFoundin",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isFoundin",
+      "undefined" : "isFoundIn"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "functional" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://schema.org/Time",
+    "baseIri" : "https://schema.org",
+    "range" : "57",
+    "description" : {
+      "undefined" : "A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm] ."
+    },
+    "label" : {
+      "IRI-based" : "Time",
+      "undefined" : "time"
+    },
+    "domain" : "34",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#has_statuses",
+    "inverse" : "61",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "has_statuses",
+      "undefined" : "hasStatuses"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "functional" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#is_used_by_A",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "is_used_by_A",
+      "undefined" : "isUsedByB"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "functional" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://schema.org/value",
+    "baseIri" : "https://schema.org",
+    "range" : "64",
+    "description" : {
+      "undefined" : "The value of the quantitative value or property value node."
+    },
+    "label" : {
+      "IRI-based" : "value",
+      "undefined" : "value"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Reffers to the value of a cookie, which is found as a separate fields within cookie logs. Example value: cPFMEtrg26bSUwe6pGuJYx.ZWRhZDc1YjMtZWJlNC00ZWMxLWE4ODgtZTUxOWZjM2YzZDY0..1grieid4t.1grieid4t.0.0.0"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/GConsent#inMedium",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "inMedium"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#associatedWith",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "associatedWith",
+      "undefined" : "associatedWith"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "functional" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#hasDomain",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasDomain",
+      "undefined" : "hasDomain"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "functional" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#isDarkPatternOf",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isDarkPatternOf",
+      "undefined" : "isDarkPatternOf"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "functional" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://schema.org/duration",
+    "baseIri" : "https://schema.org",
+    "range" : "78",
+    "description" : {
+      "undefined" : "The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format."
+    },
+    "label" : {
+      "IRI-based" : "duration",
+      "undefined" : "duration"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#hasStatus",
+    "baseIri" : "https://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasStatus",
+      "undefined" : "hasStatus"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#consent_id",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "consent_id",
+      "undefined" : "consent Id"
+    },
+    "domain" : "32",
+    "comment" : {
+      "undefined" : "Used to uniquely identify a consent instance."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/GConsent#atLocation",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "atLocation",
+      "undefined" : "atLocation"
+    },
+    "domain" : "34",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#priorConsentUnsedBy",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "priorConsentUnsedBy"
+    },
+    "domain" : "29",
+    "attributes" : [ "object", "functional" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#cookie_id",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "95",
+    "description" : {
+      "undefined" : "Used to uniquely identify a cookie."
+    },
+    "label" : {
+      "IRI-based" : "cookie_id",
+      "undefined" : "cookie Id"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#accosiatedWithConsent",
+    "inverse" : "31",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "accosiatedWithConsent"
+    },
+    "domain" : "12",
+    "attributes" : [ "object", "functional" ],
+    "id" : "96"
+  }, {
+    "range" : "52",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "44",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "90",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "46",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/GConsent#hasExpiry",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "hasExpiry",
+      "undefined" : "hasExpiry"
+    },
+    "domain" : "34",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "111"
+  }, {
+    "range" : "43",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "90",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "47",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "102",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "16",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "28",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "28",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://w3id.org/GConsent#isUpdatedConsentFor",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "isUpdatedConsentFor",
+      "undefined" : "isUpdatedConsentFor"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "121"
+  }, {
+    "range" : "16",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "16",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "24",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#hasPurpose",
+    "inverse" : "128",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasPurpose",
+      "undefined" : "hasPurpose"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "functional" ],
+    "id" : "127"
+  }, {
+    "range" : "106",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "106",
+    "domain" : "120",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "15",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "15",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "15",
+    "domain" : "137",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://schema.org/startDate",
+    "baseIri" : "https://schema.org",
+    "range" : "131",
+    "description" : {
+      "undefined" : "timestamp for instant of creation of consent"
+    },
+    "label" : {
+      "IRI-based" : "startDate",
+      "undefined" : "start Date"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#postConsentUsedBy",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "postConsentUsedBy"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "functional" ],
+    "id" : "140"
+  }, {
+    "range" : "15",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "15",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "15",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "149",
+    "domain" : "148",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "15",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://schema.org/Date",
+    "baseIri" : "https://schema.org",
+    "range" : "152",
+    "description" : {
+      "undefined" : "A date value in ISO 8601 date format."
+    },
+    "label" : {
+      "IRI-based" : "Date",
+      "undefined" : "date"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "151"
+  }, {
+    "range" : "15",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "41",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "41",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "41",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "1",
+    "domain" : "149",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "1",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "41",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "52",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "1",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "3",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "3",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "3",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "3",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#dependson",
+    "inverse" : "50",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "dependson",
+      "undefined" : "dependsOn"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "functional" ],
+    "id" : "170"
+  }, {
+    "range" : "3",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "48",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "34",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "59",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://w3id.org/GConsent#hasAssociation",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasAssociation",
+      "undefined" : "hasAssociation"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "61"
+  }, {
+    "range" : "59",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "34",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "70",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "6",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "80",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "6",
+    "domain" : "156",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#cookieDialogID",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "185",
+    "label" : {
+      "IRI-based" : "cookieDialogID",
+      "undefined" : "cookie Dialog ID"
+    },
+    "domain" : "37",
+    "attributes" : [ "datatype" ],
+    "id" : "184"
+  }, {
+    "range" : "6",
+    "domain" : "183",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "6",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "6",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "15",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "15",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "6",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "73",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#hascontrolover",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hascontrolover",
+      "undefined" : "hasControlOver"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "functional" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://w3id.org/GConsent#isPersonalDataForConsent",
+    "baseIri" : "https://w3id.org/GConsent",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "isPersonalDataForConsent",
+      "undefined" : "isPersonalDataForConsent"
+    },
+    "domain" : "32",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "194"
+  }, {
+    "range" : "16",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "99",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "103",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#IPAddress",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "196",
+    "label" : {
+      "IRI-based" : "IPAddress",
+      "undefined" : "IP Address"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype" ],
+    "id" : "199"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "10",
+    "domain" : "139",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "92",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "10",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "3",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://www.semanticweb.org/OntoCookie#isPurposeFor",
+    "baseIri" : "http://www.semanticweb.org/OntoCookie",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "isPurposeFor",
+      "undefined" : "isPurposeFor"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "functional" ],
+    "id" : "128"
+  }, {
+    "range" : "3",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "3",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "3",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "3",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "3",
+    "domain" : "99",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  } ]
+}
